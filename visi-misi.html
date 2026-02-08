@@ -1,60 +1,129 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <title>Visi dan Misi | Yayasan Pendidikan Al-Husainniyah</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Visi & Misi | Yayasan Al-Husainiyyah Muthoyyibah</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Poppins',sans-serif;color:#333;line-height:1.6;background:#f5f7f6}
+
+/* HEADER HERO */
+header{
+  background:
+    linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),
+    url('header.jpg');
+  background-size:cover;
+  background-position:center;
+  color:white;
+  text-align:center;
+  padding:100px 20px;
+}
+header img{width:120px;margin-bottom:15px}
+header h1{font-size:36px;margin-bottom:10px}
+header p{font-weight:300}
+
+/* NAVBAR */
+nav{
+  background:#1b5e20;
+  padding:14px;
+  text-align:center;
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+nav a{
+  color:white;
+  margin:0 15px;
+  text-decoration:none;
+  font-weight:600;
+}
+
+/* SECTION */
+section{padding:80px 20px;max-width:1100px;margin:auto}
+h2{text-align:center;color:#1b5e20;margin-bottom:30px}
+
+/* CARD */
+.card{
+  background:white;
+  padding:35px;
+  border-radius:12px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.06);
+  border-top:4px solid #2e7d32;
+}
+
+/* FOOTER */
+footer{
+  background:#1b5e20;
+  color:white;
+  text-align:center;
+  padding:25px;
+  margin-top:40px;
+}
+</style>
 </head>
+
 <body>
 
-  <!-- Header sederhana -->
-  <header>
-    <nav>
-      <a href="index.html">Beranda</a> /
-      <span>Visi & Misi</span>
-    </nav>
-  </header>
+<header>
+  <img src="logo.png" alt="Logo Yayasan">
+  <h1>Yayasan Al-Husainiyyah Muthoyyibah</h1>
+  <p>Visi dan Misi Yayasan</p>
+</header>
 
-  <!-- Konten utama -->
-  <main>
+<nav>
+  <a href="index.html">Beranda</a>
+  <a href="sejarah.html">Sejarah</a>
+  <a href="visi-misi.html">Visi & Misi</a>
+</nav>
 
-    <h1>Visi dan Misi Yayasan Pendidikan Al-Husainniyah</h1>
-
-    <h2>Visi</h2>
+<section>
+  <h2>Visi</h2>
+  <div class="card">
     <p>
       Menjadi lembaga pendidikan yang berperan dalam pembentukan generasi yang
-      berakhlak, berpengetahuan, dan memiliki kepedulian sosial, melalui proses
+      berakhlak, berpengetahuan, dan memiliki kepedulian sosial melalui proses
       pendidikan yang bertahap, berkelanjutan, dan berorientasi pada nilai.
     </p>
+  </div>
+</section>
 
-    <h2>Misi</h2>
+<section>
+  <h2>Misi</h2>
+  <div class="card">
     <p>
       Menyelenggarakan kegiatan pendidikan yang memperhatikan keseimbangan antara
       pengembangan pengetahuan, pembentukan karakter, dan nilai keislaman.
     </p>
-
+    <br>
     <p>
       Mengelola proses pendidikan dan pembinaan secara bertanggung jawab,
       proporsional, serta menyesuaikan dengan kebutuhan peserta didik dan
       lingkungan.
     </p>
-
+    <br>
     <p>
       Membuka ruang kerja sama dengan berbagai pihak dalam rangka mendukung
       peningkatan kualitas kegiatan pendidikan dan sosial yayasan.
     </p>
-
+    <br>
     <p>
       Menjaga prinsip non-profit dalam seluruh aktivitas yayasan sebagai bentuk
       pengabdian kepada masyarakat.
     </p>
+  </div>
+</section>
 
-  </main>
+<footer>
+  © 2026 Yayasan Al-Husainiyyah Muthoyyibah – Bandung
+</footer>
 
-  <!-- Footer -->
-  <footer>
-    <p>© Yayasan Pendidikan Al-Husainniyah</p>
-  </footer>
+</body>
+</html>
+
 
 </body>
 </html>
