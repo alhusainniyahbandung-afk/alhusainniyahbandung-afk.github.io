@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://al-husainiyyah.my.id/sitemap.xml
+https://al-husainiyyah.my.id/sitemap.xml
