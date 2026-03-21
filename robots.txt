@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-https://alhusainniyahbandung-afk.github.io/sitemap.xml
+Sitemap: https://al-husainiyyah.my.id/sitemap.xml
