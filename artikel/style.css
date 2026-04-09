@@ -129,7 +129,38 @@
     <a href="#" class="read-more">Baca Selengkapnya →</a>
   </div>
 
-</div>
+/* ===== CONTAINER ARTIKEL ===== */
+.container {
+  max-width:800px;
+  margin:auto;
+  padding:40px 20px;
+  background:white;
+  border-radius:12px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.06);
+  margin-top:30px;
+}
 
-</body>
-</html>
+/* ===== META ===== */
+.meta {
+  font-size:14px;
+  color:#777;
+  margin-bottom:20px;
+}
+
+/* ===== PARAGRAF ===== */
+.container p {
+  margin-bottom:18px;
+}
+
+/* ===== BACK LINK ===== */
+.back {
+  display:inline-block;
+  margin-top:20px;
+  text-decoration:none;
+  color:#2e7d32;
+  font-weight:600;
+}
+
+.back:hover {
+  text-decoration:underline;
+}
