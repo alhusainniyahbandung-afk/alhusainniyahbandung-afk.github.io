@@ -1,161 +1,135 @@
-/* ===== ROOT WARNA ===== */
-:root {
-  --hijau-tua: #1b5e20;
-  --hijau-utama: #2e7d32;
-  --hijau-muda: #e8f5e9;
-}
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Artikel | Yayasan Al-Husainiyyah Muthoyyibah</title>
 
-/* ===== RESET ===== */
-* {
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-body {
-  font-family:'Poppins',sans-serif;
-  color:#333;
-  line-height:1.6;
-  background:var(--hijau-muda);
-}
+  <style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Poppins',sans-serif;color:#333;line-height:1.6;background:#f5f7f6}
 
-/* ===== HEADER HERO ===== */
-header{
-  background:
-    linear-gradient(rgba(27,94,32,0.7), rgba(27,94,32,0.7)),
-    url('header.jpg');
-  background-size:cover;
-  background-position:center;
-  color:white;
-  text-align:center;
-  padding:100px 20px;
-  position:relative;
-  overflow:hidden;
-}
+  /* ===== HEADER HERO ===== */
+  header{
+    background:
+      linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),
+      url('../header.jpg');
+    background-size:cover;
+    background-position:center;
+    color:white;
+    text-align:center;
+    padding:100px 20px;
+    position:relative;
+    overflow:hidden;
+  }
 
-header::after{
-  content:"";
-  position:absolute;
-  bottom:0;left:0;
-  width:100%;height:90px;
-  background:url('https://www.transparenttextures.com/patterns/arabesque.png');
-  opacity:0.15;
-}
+  header::after{
+    content:"";
+    position:absolute;
+    bottom:0;left:0;
+    width:100%;height:90px;
+    background:url('https://www.transparenttextures.com/patterns/arabesque.png');
+    opacity:0.15;
+  }
 
-header img{
-  width:120px;
-  margin-bottom:15px;
-}
+  header h1{font-size:36px;margin-bottom:10px}
+  header p{font-weight:300;margin-bottom:20px}
 
-header h1{
-  font-size:36px;
-  margin-bottom:10px;
-}
+  /* ===== NAVBAR ===== */
+  nav{
+    background:#1b5e20;
+    padding:14px;
+    text-align:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+  }
 
-header p{
-  font-weight:300;
-  margin-bottom:20px;
-}
+  nav a{
+    color:white;
+    margin:0 15px;
+    text-decoration:none;
+    font-weight:600;
+  }
 
-/* ===== NAVBAR ===== */
-nav{
-  background:var(--hijau-tua);
-  padding:14px;
-  position:sticky;
-  top:0;
-  z-index:1000;
+  /* ===== CONTAINER ===== */
+  .container{
+    max-width:1000px;
+    margin:auto;
+    padding:40px 20px;
+  }
 
-  display:flex;
-  justify-content:center;
-  flex-wrap:wrap;
-  gap:15px;
-}
+  /* ===== CARD ===== */
+  .card{
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.06);
+    border-top:4px solid #2e7d32;
+    margin-bottom:20px;
+  }
 
-nav a{
-  color:white;
-  text-decoration:none;
-  font-weight:600;
-  padding:6px 10px;
-  border-radius:6px;
-  transition:0.3s;
-}
+  .meta{
+    font-size:13px;
+    color:#777;
+    margin-bottom:10px;
+  }
 
-nav a:hover{
-  background:var(--hijau-utama);
-}
+  .read-more{
+    display:inline-block;
+    margin-top:10px;
+    color:#2e7d32;
+    text-decoration:none;
+    font-weight:600;
+  }
 
-/* ===== SECTIONS ===== */
-section{
-  padding:80px 20px;
-  max-width:1100px;
-  margin:auto;
-  background:#f1f8f4;
-  border-radius:12px;
-  margin-top:30px;
-}
+  .read-more:hover{
+    text-decoration:underline;
+  }
+  </style>
 
-h2{
-  text-align:center;
-  color:var(--hijau-tua);
-  margin-bottom:30px;
-}
+</head>
 
-/* ===== CARD ===== */
-.card{
-  background:white;
-  padding:35px;
-  border-radius:12px;
-  box-shadow:0 8px 20px rgba(0,0,0,0.06);
-  border-top:4px solid var(--hijau-utama);
-}
+<body>
 
-/* ===== UNIT GRID ===== */
-.units{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:25px;
-}
+<header>
+  <h1>Artikel Yayasan</h1>
+  <p>Informasi, Kegiatan, dan Inspirasi</p>
+</header>
 
-.unit-box{
-  background:white;
-  padding:30px;
-  border-radius:12px;
-  box-shadow:0 5px 15px rgba(0,0,0,0.08);
-  text-align:center;
-  transition:0.3s;
-  border-top:3px solid var(--hijau-utama);
-}
+<nav>
+  <a href="../index.html">Beranda</a>
+  <a href="../sejarah.html">Sejarah</a>
+  <a href="../kh-moh-husen.html">Pendiri</a>
+  <a href="../visi-misi.html">Visi & Misi</a>
+  <a href="../artikel/">Artikel</a>
+  <a href="../dukungan-dan-kolaborasi.html">Dukungan dan Kolaborasi</a>
+  <a href="../index.html#kontak">Kontak</a>
+</nav>
 
-.unit-box:hover{
-  transform:translateY(-6px);
-}
+<div class="container">
 
-/* ===== BUTTON ===== */
-.btn{
-  display:inline-block;
-  padding:12px 30px;
-  background:var(--hijau-utama);
-  color:white;
-  text-decoration:none;
-  border-radius:30px;
-  font-weight:600;
-  transition:0.3s;
-}
+  <div class="card">
+    <h2>Membangun Transparansi Digital</h2>
+    <div class="meta">Dipublikasikan: 2026</div>
+    <p>
+      Pentingnya transparansi digital dalam meningkatkan kepercayaan publik terhadap yayasan pendidikan...
+    </p>
+    <a href="/artikel/transparansi-digital/" class="read-more">Baca Selengkapnya →</a>
+  </div>
 
-.btn:hover{
-  background:var(--hijau-tua);
-}
+  <div class="card">
+    <h2>Kegiatan Sosial dan Pendidikan</h2>
+    <div class="meta">Dipublikasikan: 2026</div>
+    <p>
+      Yayasan Al-Husainiyyah terus aktif dalam berbagai kegiatan sosial dan pendidikan...
+    </p>
+    <a href="#" class="read-more">Baca Selengkapnya →</a>
+  </div>
 
-/* ===== LINK ===== */
-a{
-  color:var(--hijau-utama);
-}
+</div>
 
-/* ===== FOOTER ===== */
-footer{
-  background:var(--hijau-tua);
-  color:white;
-  text-align:center;
-  padding:25px;
-  margin-top:40px;
-}
+</body>
+</html>
